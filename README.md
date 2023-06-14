@@ -149,7 +149,7 @@ launchctl enable gui/$(id -u yourusername)/com.yourcompany.imessageapi
 ```
 
 ## License
-This project is licensed under the[MIT License](https://choosealicense.com/licenses/mit/).
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
 
 
 Please note that you should replace `yourusername` and `yourcompanyname` with your actual username and your actual company name in the *XML* and *bash* commands.
