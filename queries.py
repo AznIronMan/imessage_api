@@ -97,6 +97,7 @@ Flask-SSLify==0.1.5
 itsdangerous==2.1.2
 Jinja2==3.1.2
 MarkupSafe==2.1.3
+python-dotenv==1.0.0
 Werkzeug==2.3.6
 EOL
     fi
