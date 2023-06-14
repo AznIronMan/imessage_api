@@ -1,6 +1,6 @@
 
 # iMessage Fetcher API
-by 
+by [ClarkTribeGames, LLC](https://www.clarktribegames.com)
 
 `iMessage Fetcher API` is a simple HTTP server that fetches and returns iMessage data from a macOS machine. You can return data for all messages, unread messages, or specific threads.
 
