@@ -68,9 +68,9 @@ if __name__ == '__main__':
 
     port = int(os.getenv('LISTEN_PORT', '5000'))
 
-    if os.getenv('DEBUG') is 'False':
+    if os.getenv('DEBUG') == 'False':
         debug_mode = False
-    elif os.getenv('DEBUG') is 'True':
+    elif os.getenv('DEBUG') == 'True':
         debug_mode = True
     else:
         debug_mode = False

@@ -27,7 +27,7 @@ def copy_env_example():
                 with open('.env', 'r') as f:
                     for line in f.readlines():
                         line = line.strip()
-                        if '=' not in line:  # Skip lines without '=' character
+                        if '=' not in line:
                             continue
                         key, value = line.split('=')
                         env_dict[key] = value
@@ -80,8 +80,9 @@ def env_check():
         return True
     
 def init_checks():
-    if not os.geteuid() == 0:
-        sys.exit("Script must be run as root (sudo).")
+    listen_port = os.getenv('LISTEN_PORT')
+    if listen_port and int(listen_port) < 1024 and not os.geteuid() == 0:
+        sys.exit("Script must be run as root (sudo) due to your Listening Port being below 1024.")
     if platform.system() != 'Darwin':
         sys.exit("This script can only be run on macOS (Darwin).")
     if env_check():
